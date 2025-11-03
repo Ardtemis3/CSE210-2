@@ -20,11 +20,14 @@ class Magic
             {
                 Console.WriteLine("Higher");
             }
-            else
+            else if (guessNumber > magicNumber)
             {
                 Console.WriteLine("Lower");
             }
+            else
+            {
+                Console.WriteLine($"You got it in {count} tries."); 
+            }
         }
-        Console.WriteLine($"You got it in {count} tries.");
     }
 }
